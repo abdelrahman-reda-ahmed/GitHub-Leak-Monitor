@@ -1,0 +1,11 @@
+
+# Secrets and local runtime data
+.env
+.secret_hash_key
+leakmon.db
+*.db
+__pycache__/
+*.pyc
+dashboard.py.bak
+dashboard.py.bak2
+tests/__pycache__/

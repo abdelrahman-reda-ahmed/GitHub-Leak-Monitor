@@ -7,7 +7,7 @@ import os
 import json
 from datetime import datetime
 
-DB_PATH = os.path.expanduser('~/leakmon/leakmon.db')
+DB_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'leakmon.db')
 
 
 def get_connection():

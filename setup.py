@@ -5,7 +5,7 @@ setup.py - one-time atomic key generation (run BEFORE any service starts)
 import os
 import sys
 
-LEAKMON_DIR = os.path.expanduser('~/leakmon')
+LEAKMON_DIR = os.path.dirname(os.path.abspath(__file__))
 KEY_PATH = os.path.join(LEAKMON_DIR, '.secret_hash_key')
 
 

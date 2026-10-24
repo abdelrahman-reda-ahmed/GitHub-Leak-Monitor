@@ -100,8 +100,8 @@ def mask_secret(value: str, secret_type: str = None) -> str:
     
     # General rules
     if len(value) <= 8:
-        # Never reveal > 50%, show only first 2
-        shown = min(2, len(value))
+        # Never reveal > 50%
+        shown = len(value) // 2
         return value[:shown] + '*' * (len(value) - shown)
     else:
         # Show first 4 + last 4

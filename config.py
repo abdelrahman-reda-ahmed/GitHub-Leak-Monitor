@@ -7,7 +7,7 @@ SECRET_HASH_KEY is loaded by reading ~/leakmon/.secret_hash_key directly (never 
 import os
 import sys
 
-LEAKMON_DIR = os.path.expanduser('~/leakmon')
+LEAKMON_DIR = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY_PATH = os.path.join(LEAKMON_DIR, '.secret_hash_key')
 
 # Defaults
